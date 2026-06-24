@@ -1,13 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Happy Birthday miss absalat❤️</title>
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Happy Birthday Miss Absalat ❤️</title><style>
 
 *{
     margin:0;
@@ -20,8 +14,6 @@ body{
     min-height:100vh;
     overflow-y:auto;
 }
-
-/* Pages */
 
 .page{
     display:none;
@@ -42,18 +34,18 @@ body{
     display:flex;
 }
 
-/* Backgrounds */
+/* BACKGROUNDS */
 
 #page1{
     background-image:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("page1.jpg");
+    url("Page1.jpg");
 }
 
 #page2{
     background-image:
-    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
-    url("page2.jpg");
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("Page2.jpg");
 
     justify-content:flex-start;
     overflow-y:auto;
@@ -63,23 +55,23 @@ body{
 
 #page3{
     background-image:
-    linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
-    url("page3.jpg");
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("Page3.jpg");
 }
 
 #page4{
     background-image:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("page4.jpg");
+    url("Page4.jpg");
 }
 
-/* Text */
+/* TEXT */
 
 h1{
     color:white;
     font-size:clamp(2rem,8vw,4.5rem);
     margin-bottom:25px;
-    text-shadow:0 0 15px rgba(0,0,0,.6);
+    text-shadow:0 0 15px rgba(0,0,0,.8);
 }
 
 p{
@@ -88,10 +80,31 @@ p{
     max-width:850px;
     line-height:1.8;
     margin-bottom:20px;
-    text-shadow:0 0 10px rgba(0,0,0,.7);
+    text-shadow:0 0 10px rgba(0,0,0,.8);
 }
 
-/* Buttons */
+/* NOTICE */
+
+.notice{
+    margin-top:15px;
+    margin-bottom:30px;
+
+    background:rgba(0,0,0,.55);
+    border:1px solid rgba(255,255,255,.2);
+
+    padding:12px 15px;
+    border-radius:10px;
+
+    color:#8cff8c;
+
+    font-family:"Courier New", monospace;
+    font-size:.8rem;
+    line-height:1.7;
+
+    max-width:650px;
+}
+
+/* BUTTONS */
 
 button{
     border:none;
@@ -114,7 +127,7 @@ button{
     position:absolute;
 }
 
-/* Celebration */
+/* CELEBRATION */
 
 #confetti{
     font-size:5rem;
@@ -128,144 +141,113 @@ button{
     }
 }
 
-</style>
-</head>
+</style></head><body><!-- PAGE 1 --><div id="page1" class="page active"><h1>🎉 Happy Birthday Miss Absalat 🎉</h1>
 
-<body>
+<p>
+    Happy Birthday to the most beautiful, coolest and most straightforward person I've ever met.
+</p>
 
-<!-- PAGE 1 -->
+<p>
+    Today is all about you ❤️
+</p>
 
-<div id="page1" class="page active">
+<button class="main-btn" onclick="showStory()">
+    Click Here ❤️
+</button>
 
-    <h1>🎉 Happy Birthday miss absalat 🎉</h1>
+</div><!-- PAGE 2 --><div id="page2" class="page"><h1>Happy Birthday ❤️</h1>
 
-    <p>
-        Happy Birthday to the most beautiful, coolest and most straightforward person I've ever met.
-    </p>
+<p>
+    It's funny how life works. Back in freshman year, I saw you in the library and worked up the courage to come talk to you. Things didn't exactly go according to plan, and before I knew it, we ended up in different departments and different campuses.
 
-    <p>
-        Today is all about you, 
-    </p>
+    <br><br>
 
-    <button class="main-btn" onclick="showStory()">
-        Click Here ❤️
+    Even after all that time, I never really forgot you.
+
+    <br><br>
+
+    Years later, when we started talking again, it felt like life was giving me another chance to get to know the girl I had a crush on all those years ago.
+
+    <br><br>
+
+    You're beautiful, funny, straightforward, and one of the most genuine people I've met. I'm glad we found our way back into each other's lives.
+
+    <br><br>
+
+    So on your birthday, I just want to say thank you for being you. I hope this year brings you happiness, success, and everything you've been working for.
+
+    <br><br>
+
+    And since life gave me another chance to get to know you...
+</p>
+
+<button class="main-btn" onclick="showQuestion()">
+    Click This ❤️
+</button>
+
+</div><!-- PAGE 3 --><div id="page3" class="page"><h1>
+    Abs, can I take you on our first date?
+</h1>
+
+<div class="notice">
+    > NOTICE:<br>
+    > This page senses people's real feelings.<br>
+    > Your answer should come from your heart.<br>
+    > Otherwise it won't work.<br>
+    > You can try if you want...
+</div>
+
+<div>
+
+    <button class="yes-btn" onclick="yesClicked()">
+        YES
+    </button>
+
+    <button id="noBtn" class="no-btn">
+        NO
     </button>
 
 </div>
 
-<!-- PAGE 2 -->
+</div><!-- PAGE 4 --><div id="page4" class="page"><div id="confetti">🎉🎊🎉</div>
 
-<div id="page2" class="page">
+<h1>
+    HAPPY BIRTHDAY AGAIN ❤️
+</h1>
 
-    <h1>
-    
-    </h1>
+<p>
+    If you're seeing this, you said yes 😌
+</p>
 
-    <p>
-        It's funny how life works. Back in freshman year, I saw you in the library and worked up the courage to come talk to you. Things didn't exactly go according to plan, and before I knew it, we ended up in different departments and different campuses.
+<p>
+    So ask me what my favorite color is.
+</p>
 
-        <br><br>
+<p>
+    That's how I'll know you made it here ❤️
+</p>
 
-        Even after all that time, I never really forgot you.
+<p>
+    — Joseph ❤️
+</p>
 
-        <br><br>
-
-        Years later, when we started talking again, it felt like life was giving me another chance to get to know the girl I had a crush on all those years ago.
-
-        <br><br> 
-
-        You're beautiful, funny, straightforward, and one of the most genuine people I've met. I'm glad we found our way back into each other's lives.
-
-        <br><br>
-
-        So on your birthday, I just want to say thank you for being you. I hope this year brings you happiness, success, and everything you've been working for.
-
-        <br><br>
-
-        And since life gave me another chance to get to know you...
-    </p>
-
-    <button class="main-btn" onclick="showQuestion()">
-        Click This ❤️
-    </button>
-
-</div>
-
-<!-- PAGE 3 -->
-
-<div id="page3" class="page">
-
-    <h1>
-        Abs, can I take you on our first date?
-
-        * notice: this page senses people's real feelings
-        and your answer really should be from your heart otherwise it 
-        wont work u can try if you want  
-    </h1>
-
-    <div>
-
-        <button class="yes-btn" onclick="yesClicked()">
-            YES
-        </button>
-
-        <button id="noBtn" class="no-btn">
-            NO
-        </button>
-
-    </div>
-
-</div>
-
-<!-- PAGE 4 -->
-
-<div id="page4" class="page">
-
-    <div id="confetti">
-        🎉🎊🎉
-    </div>
-
-    <h1>
-        HAPPY BIRTHDAY AGAIN corrine 😉❤️
-    </h1>
-
-    <p>
-        if u saw this u said yes malet new 
-    </p>
-
-    <p>
-        so ask me what's my favorite color is 
-    </p>
-
-    <p>
-        so I can know u said yes    </p>
-
-    <p>
-        — Joseph ❤️
-    </p>
-
-</div>
-
-<script>
+</div><script>
 
 function showStory(){
     document.getElementById("page1").classList.remove("active");
     document.getElementById("page2").classList.add("active");
-
     window.scrollTo(0,0);
 }
 
 function showQuestion(){
     document.getElementById("page2").classList.remove("active");
     document.getElementById("page3").classList.add("active");
-
     window.scrollTo(0,0);
 }
 
 function yesClicked(){
     document.getElementById("page3").classList.remove("active");
     document.getElementById("page4").classList.add("active");
-
     window.scrollTo(0,0);
 }
 
@@ -286,7 +268,5 @@ function moveButton(){
 noBtn.addEventListener("mouseover", moveButton);
 noBtn.addEventListener("touchstart", moveButton);
 
-</script>
-
-</body>
+</script></body>
 </html>
